@@ -170,6 +170,8 @@ background-size: cover;
     align-items: center;
 }
 .similarCard p{
+    position: absolute;
+    bottom: 0;
     width: 100%;
     color: #fff;
     background-color:  rgb(230, 230, 230, 0.3);
