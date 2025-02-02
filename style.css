@@ -194,6 +194,9 @@ background-size: cover;
     border-radius: 12px;
     cursor: pointer;
 }
+ .similar.star{
+    background-color: white;
+}
 .dark .rounded{
     background-color: rgb(130, 130, 130, 0.5);
 }
@@ -203,4 +206,8 @@ background-size: cover;
 .dark #themeChange{
     transform: rotate(180deg);
     filter: invert(100%);
+}
+.favoritesContainer {
+    display: grid;
+    gap: 10px;
 }
