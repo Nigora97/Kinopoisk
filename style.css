@@ -210,4 +210,79 @@ background-size: cover;
 .favoritesContainer {
     display: grid;
     gap: 10px;
+    grid-template-columns: repeat(4, 1fr); /* 4 фильма в ряд */
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+
+/* Общие стили для мобильных устройств */
+@media (max-width: 1024px) {
+    .similarMovies, .favoritesContainer {
+        grid-template-columns: repeat(3, 1fr); /* 3 карточки в ряд */
+    }
+    .movie {
+        flex-direction: column;
+        align-items: center;
+    }
+    .movieImg {
+        width: 100%;
+        max-width: 300px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .similarMovies, .favoritesContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряд */
+    }
+
+    .movieImg {
+        max-width: 250px;
+        height: 400px;
+    }
+
+    .desk p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .similarMovies, .favoritesContainer {
+        grid-template-columns: repeat(1, 1fr); /* 1 карточка в ряд */
+    }
+
+    .movieTitle {
+        font-size: 20px;
+    }
+
+    .movieImg {
+        max-width: 200px;
+        height: 300px;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #searchBtn {
+        width: 100%;
+        text-align: center;
+    }
 }
